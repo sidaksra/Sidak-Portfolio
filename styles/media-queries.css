@@ -243,50 +243,13 @@
     }
 }
 
-
-@media screen and (max-width: 884px){
-    .work-experience {
-        position: relative;
-        text-align: center;
-        font-family: 'Black Ops One', cursive;
-        text-transform: uppercase;
-        padding-top: 120px;
-        padding-bottom: 50px;
-        background-image: URL(../images/exp_image_5.png);
-        color: white;
-        opacity: 0.9;
-      }
-      .work-experience h1{
-          font-size: 85px;
-          color: black;
-      }
-      .project-title p{
-          font-size: 50px;
-      }
-      .project-heading h1{
-        font-size: 60px;
-      }
-          
-}
-
-@media screen and (max-width: 575px) {
-      
-      .work-experience h1{
-          font-size: 50px;
-          color: black;
-      }
-      .project-title p{
-          font-size: 30px;
-      }
-      .slide-container{
-        max-width: 300px;
-      }
-      
-      .project-heading h1{
-        font-size: 40px;
-        font-family: 'Black Ops One', cursive;
-        text-transform: uppercase;
-      }
+@media screen and (max-width: 624px) {
+    .about-containers {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-direction: column;
+    }
 }
 /* *************************************** */
 /* End of Media Queries for the Project Section on Work Exp page */
