@@ -838,9 +838,10 @@ footer {
 }
 
 .experience-details-container {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 .article-container {
