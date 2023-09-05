@@ -931,3 +931,19 @@ article .icon {
 .Education{
   padding-top: 5vh;
 }
+
+
+
+
+/* Apply the transition to the elements */
+.hidden {
+  transform: translateY(20px);
+  opacity: 0;
+  transition: transform 0.8s ease-in, opacity 0.5s ease-in;
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0); /* End position */
+}

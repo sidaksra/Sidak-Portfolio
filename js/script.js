@@ -1,3 +1,22 @@
+// Create an observer instance
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('show');
+    } else {
+      entry.target.classList.remove('show');
+    }
+  });
+});
+
+// Select elements with the "hidden" class
+const hiddenElements = document.querySelectorAll('.hidden');
+
+// Observe each hidden element
+hiddenElements.forEach(el => {
+  observer.observe(el);
+});
+
 var swiper = new Swiper(".slide-content", {
     slidesPerView: 3,
     spaceBetween: 25,
@@ -27,3 +46,4 @@ var swiper = new Swiper(".slide-content", {
         },
     },
   });
+
